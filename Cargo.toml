@@ -1,0 +1,34 @@
+[package]
+name = "openclaw-matrix"
+version = "0.1.0"
+authors = ["william-c-stanford"]
+edition = "2024"
+description = "Matrix rain TUI chat client for openclaw"
+repository = "https://github.com/william-c-stanford/openclaw-matrix"
+
+[dependencies]
+clap = { version = "4.5.43", features = ["cargo", "derive", "env"] }
+crossterm = { version = "0.29.0", features = ["event-stream"] }
+rand = "0.10.0"
+ezemoji = "2.0.0"
+toml = "0.9.5"
+serde = { version = "1.0.219", features = ["derive"] }
+ratatui = "0.29"
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = { version = "0.26", features = ["native-tls"] }
+futures = "0.3"
+serde_json = "1"
+ed25519-dalek = { version = "2", features = ["rand_core"] }
+base64 = "0.22"
+dirs = "6"
+hex = "0.4"
+
+[dev-dependencies]
+pretty_assertions = "1.4.1"
+insta = { version = "1.43.1", features = ["yaml"] }
+
+[profile.dev.package.insta]
+opt-level = 3
+
+[profile.dev.package.similar]
+opt-level = 3

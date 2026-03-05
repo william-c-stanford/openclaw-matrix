@@ -1,0 +1,4 @@
+/target
+node_modules/
+packages/matrix-bridge/dist/
+.DS_Store
