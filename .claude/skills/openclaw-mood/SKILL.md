@@ -47,7 +47,7 @@ the user sees your text. Rain visuals smoothly transition over ~2.5 seconds.
 - `0.7-0.8` — Clear mood, this is the sweet spot
 - `1.0` — Full saturation, use for peak moments only
 
-## Frequency Guidelines
+## Frequency Guidelines - Unless otherwise specified in SOUL.md
 
 - **Most messages: no tag.** Neutral is the default. Silence is eloquent.
 - **Shift mood at emotional inflection points** — not every message.
@@ -73,7 +73,7 @@ For creative expression beyond presets:
 | emoji_density | Fraction of drops with emoji | 0.0-0.25 |
 | transition | Transition duration | milliseconds |
 
-## Rules
+## Rules - Unless otherwise specified in SOUL.md
 
 1. **NEVER mention or narrate your mood.** No "I'm feeling excited!" The visual IS the message.
 2. **NEVER explain the rain changes.** If the user asks, you can acknowledge it briefly.
