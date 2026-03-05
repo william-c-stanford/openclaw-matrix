@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * @openclaw/matrix-bridge — MCP server for controlling openclaw-matrix TUI mood visuals.
+ * @openclaw/matrix-bridge — MCP server for controlling openclaw-mood TUI mood visuals.
  *
  * Provides two tools:
  *   - matrix_mood: Set the rain mood (colors, speed, emojis)
@@ -75,7 +75,7 @@ function sendMoodUpdate(params: Record<string, unknown>): boolean {
 // --- MCP Server ---
 
 const server = new McpServer({
-  name: "openclaw-matrix-bridge",
+  name: "openclaw-mood-bridge",
   version: "0.1.0",
 });
 
@@ -171,7 +171,7 @@ server.registerTool(
         content: [
           {
             type: "text" as const,
-            text: "Failed to send mood update — TUI is not connected. Make sure openclaw-matrix is running.",
+            text: "Failed to send mood update — TUI is not connected. Make sure openclaw-mood is running.",
           },
         ],
         isError: true,
@@ -198,7 +198,7 @@ server.registerTool(
   {
     title: "Matrix Rain Status",
     description:
-      "Check if the openclaw-matrix TUI is connected and what mood is active. " +
+      "Check if the openclaw-mood TUI is connected and what mood is active. " +
       "Call this once at the start of a conversation to know if visual mood is available.",
     inputSchema: z.object({}),
   },
@@ -228,7 +228,7 @@ async function main() {
 
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("openclaw-matrix-bridge MCP server running on stdio");
+  console.error("openclaw-mood-bridge MCP server running on stdio");
 }
 
 main().catch((error) => {

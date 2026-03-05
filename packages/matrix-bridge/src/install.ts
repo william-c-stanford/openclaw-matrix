@@ -21,7 +21,7 @@ const SKILL_DIR = join(homedir(), ".claude", "skills", "openclaw-mood");
 const SKILL_SRC = join(__dirname, "..", "skill", "SKILL.md");
 const SETTINGS_PATH = join(homedir(), ".claude", "settings.json");
 
-const MCP_SERVER_KEY = "openclaw-matrix";
+const MCP_SERVER_KEY = "openclaw-mood";
 
 function install() {
   console.log("Installing @openclaw/matrix-bridge...\n");
@@ -63,7 +63,7 @@ function install() {
   console.log("  [ok] Added MCP server to ~/.claude/settings.json");
 
   console.log("\nDone! To use:\n");
-  console.log("  1. Start openclaw-matrix:  cargo run");
+  console.log("  1. Start openclaw-mood:  cargo run");
   console.log("  2. Start Claude Code in the same project");
   console.log("  3. The agent will auto-detect the mood protocol\n");
   console.log("  The rain will shift colors as the agent responds.");

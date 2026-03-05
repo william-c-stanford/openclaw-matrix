@@ -254,7 +254,7 @@ pub fn build_connect_params(
         "maxProtocol": 3,
         "client": {
             "id": "cli",
-            "displayName": "Matrix Rain TUI",
+            "displayName": "Openclaw Mood TUI",
             "version": env!("CARGO_PKG_VERSION"),
             "platform": std::env::consts::OS,
             "mode": "ui"

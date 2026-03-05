@@ -1,4 +1,4 @@
-# openclaw-matrix — Architecture & Technical Documentation
+# openclaw-mood — Architecture & Technical Documentation
 
 **A Matrix rain TUI chat client for openclaw.**
 
@@ -57,7 +57,7 @@ cargo run -- --offline --shade -C "0,200,255" -H "#FF00FF" -g classic
 ## Project Structure
 
 ```
-openclaw-matrix/
+openclaw-mood/
 ├── Cargo.toml                 # Dependencies & build config
 ├── plans/
 │   └── emotive-rain.md        # Feature plan for the mood system
@@ -489,7 +489,7 @@ Full-screen settings overlay that replaces the rain. Accessible via `Ctrl+S`.
 
 **File:** `src/persist.rs` (91 lines)
 
-Saves/loads user settings to `~/.config/openclaw-matrix/settings.toml` (via `dirs` crate).
+Saves/loads user settings to `~/.config/openclaw-mood/settings.toml` (via `dirs` crate).
 
 **Persisted fields:** color, head, group, direction, speed, shade, shade_gradient, bg_color.
 
@@ -742,7 +742,7 @@ Each frame (every 50ms):
 | File | Purpose |
 |------|---------|
 | `~/.config/rusty-rain/config.toml` | Rain engine config (character groups, colors) |
-| `~/.config/openclaw-matrix/settings.toml` | Persisted UI settings (auto-saved) |
+| `~/.config/openclaw-mood/settings.toml` | Persisted UI settings (auto-saved) |
 | `~/.openclaw/openclaw.json` | Gateway URL and token |
 | `~/.openclaw/identity/device-matrix.json` | Ed25519 device keypair |
 

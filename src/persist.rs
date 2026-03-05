@@ -18,7 +18,7 @@ pub struct Saved {
 }
 
 fn config_path() -> Option<PathBuf> {
-    dirs::config_dir().map(|d| d.join("openclaw-matrix").join("settings.toml"))
+    dirs::config_dir().map(|d| d.join("openclaw-mood").join("settings.toml"))
 }
 
 /// Load persisted settings from disk (returns default if missing/corrupt).

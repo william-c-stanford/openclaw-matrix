@@ -110,7 +110,7 @@ fn identity_path() -> PathBuf {
         .unwrap_or_else(|| PathBuf::from("."))
         .join(".openclaw")
         .join("identity")
-        .join("device-matrix.json")
+        .join("device-mood.json")
 }
 
 #[cfg(test)]

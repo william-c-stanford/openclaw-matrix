@@ -1,7 +1,7 @@
 use clap::Parser;
 
 #[derive(Parser, Debug)]
-#[command(name = "openclaw-matrix", version, about = "Jack into the Matrix. A terminal client for openclaw.")]
+#[command(name = "openclaw-mood", version, about = "Jack into the Matrix. A terminal client for openclaw.")]
 pub struct Config {
     /// Rain speed
     #[arg(long, default_value = "medium", value_parser = parse_speed)]

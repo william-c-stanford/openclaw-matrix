@@ -1,4 +1,4 @@
-# openclaw-matrix
+# openclaw-mood
 
 Matrix rain TUI for [openclaw](https://github.com/william-c-stanford/openclaw) — chat with your AI agent while rain streams in the background. The rain responds to the agent's emotional state with smooth color transitions, speed changes, and emoji accents.
 
@@ -12,13 +12,13 @@ cargo install --path .
 
 ```bash
 # Connect to local openclaw gateway
-openclaw-matrix --gateway-url ws://localhost:18789/ws
+openclaw-mood --gateway-url ws://localhost:18789/ws
 
 # Screensaver mode (no agent, just rain)
-openclaw-matrix --offline
+openclaw-mood --offline
 
 # Custom colors
-openclaw-matrix --color "0,255,255" --head "#FF00FF"
+openclaw-mood --color "0,255,255" --head "#FF00FF"
 ```
 
 ### Controls
@@ -45,7 +45,7 @@ Press `Ctrl+S` to open the settings panel. Configure:
 - **Gradient** — Shade gradient base color
 - **Mood** — Agent mood frequency: off, rare, normal, expressive
 
-Settings persist across restarts in `~/.config/openclaw-matrix/settings.toml`.
+Settings persist across restarts in `~/.config/openclaw-mood/settings.toml`.
 
 ## Emotive Rain
 
@@ -68,8 +68,8 @@ The agent can express emotions through the rain by including `<mood>` tags in it
 Clone the repo and run the install script:
 
 ```bash
-git clone https://github.com/william-c-stanford/openclaw-matrix.git
-cd openclaw-matrix/packages/matrix-bridge
+git clone https://github.com/william-c-stanford/openclaw-mood.git
+cd openclaw-mood/packages/matrix-bridge
 npm install && npm run build
 node dist/install.js install
 ```

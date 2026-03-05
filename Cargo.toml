@@ -1,10 +1,10 @@
 [package]
-name = "openclaw-matrix"
+name = "openclaw-mood"
 version = "0.1.0"
 authors = ["william-c-stanford"]
 edition = "2024"
 description = "Matrix rain TUI chat client for openclaw"
-repository = "https://github.com/william-c-stanford/openclaw-matrix"
+repository = "https://github.com/william-c-stanford/openclaw-mood"
 
 [dependencies]
 clap = { version = "4.5.43", features = ["cargo", "derive", "env"] }

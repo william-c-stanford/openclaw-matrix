@@ -5,7 +5,7 @@ description: >
   <mood> tags to smoothly shift rain colors, speed, and emoji accents. Presets:
   curious (blue), excited (magenta), contemplative (indigo), frustrated (red),
   amused (gold), focused (silver), serene (teal). Tags are stripped before display.
-  Use when chatting through openclaw-matrix or when matrix_mood MCP tool is available.
+  Use when chatting through openclaw-mood or when matrix_mood MCP tool is available.
 user-invocable: false
 ---
 

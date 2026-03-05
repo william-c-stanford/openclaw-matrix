@@ -1,7 +1,7 @@
 {
   "name": "@openclaw/matrix-bridge",
   "version": "0.1.0",
-  "description": "MCP bridge server for openclaw-matrix — gives Claude Code a matrix_mood tool to control TUI rain visuals",
+  "description": "MCP bridge server for openclaw-mood — gives Claude Code a matrix_mood tool to control TUI rain visuals",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
@@ -39,6 +39,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/william-c-stanford/openclaw-matrix"
+    "url": "https://github.com/william-c-stanford/openclaw-mood"
   }
 }
