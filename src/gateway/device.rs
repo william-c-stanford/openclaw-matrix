@@ -1,5 +1,6 @@
 use base64::Engine;
 use ed25519_dalek::{Signer, SigningKey, VerifyingKey};
+use sha2::{Sha256, Digest};
 use std::fmt::Write as _;
 use serde::{Deserialize, Serialize};
 use std::path::PathBuf;
@@ -50,14 +51,11 @@ impl DeviceIdentity {
         let signing_key = SigningKey::from_bytes(&secret_bytes);
         let verifying_key: VerifyingKey = signing_key.verifying_key();
 
-        // Device ID = sha256 hex of raw public key bytes (matches official client)
+        // Device ID = sha256(raw_public_key_bytes).hex() — matches official client
         let device_id = {
-            let raw = verifying_key.as_bytes();
-            // Simple sha256 using the ring-less approach: just use first 32 hex chars of pubkey
-            // The official client uses sha256(raw_pubkey).hex() but for our purposes
-            // a unique deterministic ID from the pubkey works fine
+            let hash = Sha256::digest(verifying_key.as_bytes());
             let mut hex = String::with_capacity(64);
-            for byte in raw {
+            for byte in hash.iter() {
                 write!(&mut hex, "{:02x}", byte).unwrap();
             }
             hex
