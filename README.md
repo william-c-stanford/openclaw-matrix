@@ -1,6 +1,10 @@
 # openclaw-mood
 
-Matrix rain TUI for [openclaw](https://github.com/william-c-stanford/openclaw) — chat with your AI agent while rain streams in the background. The rain responds to the agent's emotional state with smooth color transitions, speed changes, and emoji accents.
+<p align="center">
+  <img src="assets/banner.png" alt="openclaw-mood — Matrix rain TUI with emotive binary rain, emoji accents, and smooth color transitions" width="100%">
+</p>
+
+Emotional rain TUI for [openclaw](https://github.com/openclaw/openclaw) — chat with your AI agent while rain streams in the background. The rain responds to the agent's emotional state with smooth color transitions, speed changes, and emoji accents.
 
 ## Install
 
